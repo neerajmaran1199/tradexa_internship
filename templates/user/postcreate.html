@@ -1,0 +1,17 @@
+
+{% extends 'User/index.html' %}
+{% block content %}
+<div style="margin-left:40px;margin-top:40px">
+<form method="POST" enctype="multipart/form-data">
+  
+    <!-- Security token -->
+    {% csrf_token %}
+  
+    <!-- Using the formset -->
+    {{ form.as_p }}
+      
+    <input type="submit" value="Submit">
+</form>
+Note - date in mm/dd/yy othervise post will not save
+</div>
+{% endblock %}

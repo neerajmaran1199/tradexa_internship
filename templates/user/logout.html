@@ -1,0 +1,12 @@
+
+{% extends 'User/index.html' %}
+{% block content %}
+<div style="margin-top: 100px;">
+    <div class="jumbotron" id="jumbo">
+    You are Logged Out 
+    <div><br><br>
+        Login on again <a href="{% url 'login' %}">Login</a>
+    </div>
+    </div>
+</div>
+{% endblock %}
